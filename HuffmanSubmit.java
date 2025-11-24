@@ -6,12 +6,8 @@ public class HuffmanSubmit implements Huffman {
 	public static void main(String[] args) {
 		Huffman huffman = new HuffmanSubmit();
 		try {
-			
-			huffman.encode("alice30.txt", "alice.enc", "aliceFreq.txt");
-			huffman.decode("alice.enc", "alice_dec.txt", "aliceFreq.txt");
-		
-			huffman.encode("ur.jpg", "ur.enc", "urFreq.txt");
-			huffman.decode("ur.enc", "ur_dec.jpg", "urFreq.txt");
+			huffman.encode("ur.jpg", "ur.enc", "freq.txt");
+			huffman.decode("ur.enc", "ur_dec.jpg", "freq.txt");
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -208,3 +204,4 @@ public class HuffmanSubmit implements Huffman {
 		}
 	}
 }
+
